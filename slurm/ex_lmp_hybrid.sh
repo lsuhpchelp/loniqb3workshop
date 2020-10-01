@@ -2,8 +2,8 @@
 #SBATCH --job-name=lmp_hybrid        # Job name
 #SBATCH --partition=workq            # Need to submit workq for multiple node jobs
 #SBATCH --nodes=2                    # Maximum number of nodes to be allocated
-#SBATCH --ntasks=2                   # Number of MPI tasks (i.e. processes)
-#SBATCH --cpus-per-task=48           # Number of cores per MPI task 
+#SBATCH --ntasks=4                   # Number of MPI tasks (i.e. processes)
+#SBATCH --cpus-per-task=24           # Number of cores per MPI task 
 #SBATCH --time=00:05:00              # Wall time limit (hh:mm:ss)
 #SBATCH --output=%x_%j.log  # Standard output and error file 
 
